@@ -1,2 +1,23 @@
-@import './common';
-@import './example';
+// utils styles
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/breakpoints';
+
+// base styles
+@import './base/reset';
+@import './base/base';
+
+//components styles
+// @import './components/container';
+// @import './components/titles';
+// @import './components/logo';
+
+// layouts styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/favorites';
+@import './layout/customers';
+@import './layout/subscribe';
+@import './layout/footer';

@@ -1,0 +1,24 @@
+%btn {
+  border-radius: var(--btn-input-radius);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+%reset-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+%reset-link {
+  color: var(--main-text-color);
+
+  text-decoration: none;
+  display: inline-block;
+}
