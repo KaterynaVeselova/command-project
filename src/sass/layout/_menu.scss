@@ -75,7 +75,7 @@
     padding: 34px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     @include flex-basis (32px, 3);
     border: 16px solid var(--yellow-main);
     border-radius: 197px;

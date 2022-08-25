@@ -1,14 +1,11 @@
 .container {
   // mobile first
   margin: 0 auto;
+  padding: 0 20px;
 
   //mobile
   @media screen and (min-width: $mobile) {
-    // width: 480px;
-    padding: 0 20px;
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
+    width: 480px;
   }
   //tablet
   @media screen and (min-width: $tablet) {
