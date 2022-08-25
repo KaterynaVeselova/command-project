@@ -43,11 +43,13 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
+
+  &__item {
+  }
+  &__icon {
+  }
 }
-.customers__list__item {
-}
-.customers__list__icon {
-}
+
 .review {
   font-family: var(--main-font);
   font-weight: 700;
@@ -58,22 +60,23 @@
 }
 .customers {
   border-right: 0.854167px solid #7eb101;
-}
-.customers__img {
-}
-.customers__name {
-  font-family: var(--main-font);
-  font-weight: 600;
-  font-size: 13.6667px;
-  line-height: 150%;
 
-  color: var(--main-text-color);
-}
-.customers__description {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 13.6667px;
-  line-height: 150%;
+  &__img {
+  }
+  &__name {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 13.6667px;
+    line-height: 150%;
 
-  color: var(--main-text-color);
+    color: var(--main-text-color);
+  }
+  &__description {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 150%;
+
+    color: var(--main-text-color);
+  }
 }
