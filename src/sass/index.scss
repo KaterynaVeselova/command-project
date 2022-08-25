@@ -1,3 +1,6 @@
+// normalize
+@import './common';
+
 // utils styles
 @import './utils/variables';
 @import './utils/placeholders';
@@ -9,15 +12,13 @@
 @import './base/base';
 
 //components styles
-// @import './components/container';
-// @import './components/titles';
-// @import './components/logo';
+@import './components/container';
 
 // layouts styles
 @import './layout/header';
 @import './layout/hero';
-@import './layout/about';
-@import './layout/favorites';
+@import './layout/offerings';
+@import './layout/menu';
 @import './layout/customers';
 @import './layout/subscribe';
 @import './layout/footer';
