@@ -1,26 +1,26 @@
 .customers__bg__img {
   @media screen and (max-width: $mobile) {
-    background-image: url(../src/images/customers/customers-bg-mob@1x.jpg);
+    background-image: url(../images/customers/customers-bg-mob@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../src/images/customers/customers-bg-mob@2x.jpg);
+      background-image: url(../images/customers/customers-bg-mob@2x.jpg);
     }
   }
   @media screen and (min-width: $tablet) {
-    background-image: url(../src/images/customers/customers-bg-tab@1x.jpg);
+    background-image: url(../images/customers/customers-bg-tab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../src/images/customers/customers-bg-tab@2x.jpg);
+      background-image: url(../images/customers/customers-bg-tab@2x.jpg);
     }
   }
   @media screen and (min-width: $desktop) {
-    background-image: url(../src/images/customers/customers-bg-desk@1x.jpg);
+    background-image: url(../images/customers/customers-bg-desk@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../src/images/customers/customers-bg-desk@2x.jpg);
+      background-image: url(../images/customers/customers-bg-desk@2x.jpg);
     }
   }
 }
