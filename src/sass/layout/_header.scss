@@ -43,10 +43,6 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  // @media screen and (min-width: $tablet) {
-  // }
-  // @media screen and (min-width: $desktop) {
-  // }
 }
 .nav__list {
   display: flex;
@@ -57,8 +53,6 @@
     flex-direction: row;
     gap: 28px;
   }
-  // @media screen and (min-width: $desktop) {
-  // }
 }
 .nav__link {
   padding-left: 16px;
@@ -66,7 +60,6 @@
   padding-bottom: 16px;
 
   color: var(--secondary-text-color);
-  // background-color: var(--bgc-secondary);
 
   display: block;
 
@@ -85,10 +78,7 @@
     font-size: 14px;
     line-height: calc(16 / 14);
 
-    // color: var(--secondary-text-color);
-    //background-color: var(--bgc-secondary);
-
-    transition: color var(--animation); /*, background-color var(--animation)*/
+    transition: color var(--animation);
 
     &:hover,
     &:focus {
