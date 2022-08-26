@@ -12,7 +12,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
     
 }
 
@@ -22,11 +22,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
 }
 .hero__foto--top{
     box-sizing: border-box;
-    border: 26px solid #FFE550;
+    border: 26px solid var(--yellow-main);
     border-radius: 50%;
     width: 580px;
    
@@ -42,7 +42,7 @@
     position: absolute;
     right: 481px;
     top: 357px;
-    background: #FEFEFE;
+    background: var(--bgc-main);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     transform: rotate(360deg);
@@ -55,7 +55,7 @@
     position: absolute;
     right: -81px;
     top: 357px;
-    background: #FEFEFE;
+    background: var(--bgc-main);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     transform: rotate(360deg);
@@ -76,12 +76,12 @@
 
 
 .hero__btn{
-    background: #BBF330;
+    background: var(--btn-default);
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     text-align: right;
-    color: #2C2C2C;
+    color: var(--main-text-color);
     border: none;
     @extend %btn;
     
@@ -94,8 +94,8 @@
     font-size: 14px;
     line-height: 150%;
     text-align: right;
-    color: #2C2C2C;
-    border: 2px solid #7EB101;
+    color: var(--main-text-color);
+    border: 2px solid var(--dark-green);
     text-align: center;
     @extend %btn;
 
@@ -114,9 +114,9 @@
 .hero__foto--bottom{
     width: 550px;
     box-sizing: border-box;
-    border: 26px solid #FFE550;
+    border: 26px solid var(--yellow-main);
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--bgc-secondary);
     margin-top: 231px;
     margin-bottom: 75px;
     outline: 5px solid rgba(255, 255, 255, 0.5);
@@ -139,7 +139,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 120%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
     margin-bottom: 20px;
     padding-top: 70px;
 }
@@ -148,7 +148,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
 
 }
 
@@ -162,14 +162,14 @@
     font-weight: 700;
     font-size: 17.0833px;
     line-height: 140%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
 }
 .hero__title--column{
     width: 255px;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: #2C2C2C;
+    color: var(--main-text-color);
 }
 .hero__icon--size{
     width: 48px;
