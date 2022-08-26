@@ -20,12 +20,10 @@
   height: 28px;
   border: none;
 
+  background-color: var(--bgc-secondary);
   @media screen and (min-width: $tablet) {
     display: none;
   }
-}
-.btn-menu__link {
-  background-color: var(--bgc-secondary);
 }
 .btn-menu__svg {
   fill: var(--dark-green);
@@ -45,12 +43,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: $tablet) {
-  }
-  @media screen and (min-width: $desktop) {
-  }
+  // @media screen and (min-width: $tablet) {
+  // }
+  // @media screen and (min-width: $desktop) {
+  // }
 }
-
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -60,19 +57,16 @@
     flex-direction: row;
     gap: 28px;
   }
-  @media screen and (min-width: $desktop) {
-  }
+  // @media screen and (min-width: $desktop) {
+  // }
 }
-
 .nav__link {
-  line-height: calc(16 / 14);
-
   padding-left: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
 
   color: var(--secondary-text-color);
-  background-color: var(--bgc-secondary);
+  // background-color: var(--bgc-secondary);
 
   display: block;
 
@@ -91,10 +85,10 @@
     font-size: 14px;
     line-height: calc(16 / 14);
 
-    color: var(--secondary-text-color);
-    background-color: var(--bgc-secondary);
+    // color: var(--secondary-text-color);
+    //background-color: var(--bgc-secondary);
 
-    transition: color var(--animation), background-color var(--animation);
+    transition: color var(--animation); /*, background-color var(--animation)*/
 
     &:hover,
     &:focus {
