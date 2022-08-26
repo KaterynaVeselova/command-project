@@ -120,7 +120,7 @@
     @extend %btn;
 
     &:hover{
-        border: 2px solid #597D00;
+        border: 2px solid var(--border-onhover);
     }
 
 }
