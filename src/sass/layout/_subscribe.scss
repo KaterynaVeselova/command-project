@@ -1,13 +1,13 @@
 .subscribe {
   position: relative;
-  top: -45px;
+  top: -42px;
   padding-bottom: 60px;
   @media screen and (min-width: 768px) {
-    top: -84px;
+    top: -73px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: 1200px) {
-    top: -71px;
+    top: -65px;
     padding-bottom: 64px;
   }
 }
@@ -59,13 +59,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .subscribe__text {
-  font-family: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14);
   margin-bottom: 40px;
@@ -95,6 +93,15 @@
   margin-bottom: 20px;
   outline: none;
 
+  &:valid {
+    border: 0.854167px solid var(--dark-green);
+    border-radius: 30px;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border: 0.854167px solid var(--error-color);
+    border-radius: 30px;
+  }
+
   &::placeholder {
     font-family: var(--main-font);
     font-weight: 400;
@@ -104,7 +111,7 @@
 
   @media screen and (min-width: 768px) {
     width: 394px;
-    margin-right: 18px;
+    margin-right: 19px;
     margin-bottom: 0;
   }
 
@@ -122,11 +129,10 @@
   width: 106px;
   height: 42px;
   padding: 11px 22px;
-  border: none transparent;
+  border: none;
   background-color: var(--btn-default);
   align-items: center;
 
-  font-family: var(--main-font);
   font-weight: 400;
   color: var(--main-text-color);
   outline: none;
