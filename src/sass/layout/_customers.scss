@@ -43,8 +43,26 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
+  
+  @media screen and (max-width: $mobile) {
+   gap: 24px;
+  }
+  @media screen and (min-width: $tablet) {
+   gap: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+   gap: 140px;
+  }
 
   &__item {
+    background-color: #fff;
+    display: block;
+    width: 280px;
+    height: 250px;
+    border-top-right-radius: 10%;
+    border-end-end-radius: 10%;
+    border-end-start-radius: 10%;
+    padding: 20px;
   }
   &__icon {
   }
@@ -60,6 +78,7 @@
 }
 .customers {
   border-right: 0.854167px solid #7eb101;
+  display: flex;
 
   &__img {
   }
