@@ -107,3 +107,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Ignore index.css and index.css.map
+**/src/sass/index.css
+**/src/sass/index.css.map
