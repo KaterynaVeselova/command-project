@@ -25,43 +25,43 @@
   }
 }
 .customers__bg__img {
+  background: var(--bgc-main);
   background: no-repeat;
-
   background-size: 320px 770px;
   margin-right: auto;
   margin-left: auto;
 
-  background-image: url(../images/customers/customers-bg-mob@1x.jpg);
+  background-image: url(../images/customers/customers-bg-mob@1x.png);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/customers/customers-bg-mob@2x.jpg);
+    background-image: url(../images/customers/customers-bg-mob@2x.png);
   }
   @media screen and (min-width: $mobile) {
     background-size: 480px 730px;
-    background-image: url(../images/customers/customers-bg-480@1x.jpg);
+    background-image: url(../images/customers/customers-bg-480@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-bg-480@2x.jpg);
+      background-image: url(../images/customers/customers-bg-480@2x.png);
     }
   }
   @media screen and (min-width: $tablet) {
-    background-size: 768px 510px;
-    background-image: url(../images/customers/customers-bg-tab@1x.jpg);
+    background-size: 768px 500px;
+    background-image: url(../images/customers/customers-bg-tab@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-bg-tab@2x.jpg);
+      background-image: url(../images/customers/customers-bg-tab@2x.png);
     }
   }
   @media screen and (min-width: $desktop) {
     background-size: 1280px 600px;
-    background-image: url(../images/customers/customers-bg-desk@1x.jpg);
+    background-image: url(../images/customers/customers-bg-desk@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-bg-desk@2x.jpg);
+      background-image: url(../images/customers/customers-bg-desk@2x.png);
     }
   }
 }
