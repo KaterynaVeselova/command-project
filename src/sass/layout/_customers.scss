@@ -1,29 +1,38 @@
 .section {
   align-items: center;
-  @media screen and (min-width: $mobile) {
-    padding: 60px 20px;
-  }
+  padding: 60px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
   @media screen and (min-width: $tablet) {
     padding: 60px 32px 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
   }
   @media screen and (min-width: $desktop) {
     padding: 100px 125px 200px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
   }
 }
 .customers__bg__img {
   background: no-repeat;
 
-  @media screen and (min-width: $mobile) {
-    height: 770px;
-    background-image: url(../images/customers/customers-bg-mob@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-bg-mob@2x.jpg);
-    }
+  background-size: 320px 770px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: url(../images/customers/customers-bg-mob@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers/customers-bg-mob@2x.jpg);
   }
+
   @media screen and (min-width: $tablet) {
-    height: 544px;
+    background-size: 768px 544px;
     background-image: url(../images/customers/customers-bg-tab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -32,7 +41,7 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    height: 650px;
+    background-size: 1280px 600px;
     background-image: url(../images/customers/customers-bg-desk@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -45,54 +54,63 @@
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
-
+  line-height: calc(33px / 28px);
   color: var(--main-text-color);
   margin-bottom: 20px;
 }
 .section__description {
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 16px;
-
+  line-height: calc(16px / 14px);
   color: var(--main-text-color);
   margin-bottom: 32px;
 }
 .customers__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
 
-  @media screen and (min-width: $mobile) {
-    gap: 24px;
-  }
   @media screen and (min-width: $tablet) {
     gap: 32px;
+    flex-direction: row;
   }
   @media screen and (min-width: $desktop) {
     gap: 140px;
+    flex-direction: row;
   }
 
   &__item {
     background-color: #fff;
     display: block;
-    min-width: 280px;
-    height: 250px;
-    border-top-right-radius: 10%;
-    border-end-end-radius: 10%;
-    border-end-start-radius: 10%;
+    border-radius: 0px 30px 30px 30px;
     padding: 8px;
-  }
-  &__icon {
+
+    @media screen and (max-width: 479px) {
+      max-width: 280px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 336px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 500px;
+    }
   }
 }
+.rate__list {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 
+  &__icon {
+    fill: #ffe550;
+  }
+}
 .review {
   text-align: left;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
-
+  line-height: calc(19px / 16px);
   color: var(--main-text-color);
   margin-top: 28px;
   margin-bottom: 40px;
@@ -114,17 +132,15 @@
   &__name {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 13.6667px;
-    line-height: 150%;
-
+    font-size: 14px;
+    line-height: calc(21px / 14px);
     color: var(--main-text-color);
     margin: 0;
   }
   &__description {
     font-family: var(--main-font);
-    font-size: 13.6667px;
-    line-height: 150%;
-
+    font-size: 14px;
+    line-height: calc(21px / 14px);
     color: var(--main-text-color);
   }
 }
