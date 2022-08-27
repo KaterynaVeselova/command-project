@@ -1,8 +1,7 @@
 .section {
   align-items: center;
-  @media screen and (min-width: $mobile) {
-    padding: 60px 20px;
-  }
+  padding: 60px 20px;
+
   @media screen and (min-width: $tablet) {
     padding: 60px 32px 120px;
   }
@@ -13,17 +12,18 @@
 .customers__bg__img {
   background: no-repeat;
 
-  @media screen and (min-width: $mobile) {
-    height: 770px;
-    background-image: url(../images/customers/customers-bg-mob@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-bg-mob@2x.jpg);
-    }
+  height: 770px;
+
+  background-image: url(../images/customers/customers-bg-mob@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers/customers-bg-mob@2x.jpg);
   }
+
   @media screen and (min-width: $tablet) {
     height: 544px;
+    min-width: 480px;
     background-image: url(../images/customers/customers-bg-tab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -61,10 +61,8 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 
-  @media screen and (min-width: $mobile) {
-    gap: 24px;
-  }
   @media screen and (min-width: $tablet) {
     gap: 32px;
   }
@@ -75,12 +73,14 @@
   &__item {
     background-color: #fff;
     display: block;
-    min-width: 280px;
-    height: 250px;
     border-top-right-radius: 10%;
     border-end-end-radius: 10%;
     border-end-start-radius: 10%;
     padding: 8px;
+
+    @media screen and (max-width: 479px) {
+      max-width: 280px;
+    }
   }
   &__icon {
   }
