@@ -4,6 +4,13 @@
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+
+  @media screen and (min-width: $mobile) {
+    padding: 60px 32px 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
   @media screen and (min-width: $tablet) {
     padding: 60px 32px 120px;
     margin-left: auto;
@@ -30,9 +37,17 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/customers/customers-bg-mob@2x.jpg);
   }
-
+  @media screen and (min-width: $mobile) {
+    background-size: 480px 730px;
+    background-image: url(../images/customers/customers-bg-480@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/customers-bg-480@2x.jpg);
+    }
+  }
   @media screen and (min-width: $tablet) {
-    background-size: 768px 544px;
+    background-size: 768px 510px;
     background-image: url(../images/customers/customers-bg-tab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
