@@ -38,6 +38,7 @@
 
   &__image {
     margin-bottom: 60px;
+    align-items: center;
     justify-content: center;
     display: flex;
 
@@ -118,7 +119,7 @@
 
   &__advantage-item:not(:last-child) {
     @media screen and (max-width: $tablet) {
-      padding-bottom: 28px;
+      margin-bottom: 28px;
     }
   }
 
@@ -154,7 +155,7 @@
     font-size: 14px;
     line-height: 1.5;
 
-    color: #000;
+    color: var(--secondary-text-color);
 
     @media screen and (min-width: $desktop) {
       display: none;
@@ -162,7 +163,7 @@
 
     &::after {
       content: ' >';
-      color: #000;
+      color: var(--secondary-text-color);
     }
   }
 
@@ -172,7 +173,7 @@
     padding: 10px 32px;
     margin-right: 21px;
 
-    background-color: #ffffff;
-    border: 2px solid #7eb101;
+    background-color: var(--bgc-secondary);
+    border: 2px solid var(--dark-green);
   }
 }
