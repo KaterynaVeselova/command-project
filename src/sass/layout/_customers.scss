@@ -19,7 +19,8 @@
 }
 .customers__bg__img {
   background: no-repeat;
-  height: 770px;
+
+  background-size: 320px 770px;
   margin-right: auto;
   margin-left: auto;
 
@@ -31,8 +32,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    height: 544px;
-    min-width: 480px;
+    background-size: 768px 544px;
     background-image: url(../images/customers/customers-bg-tab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -41,7 +41,7 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    height: 650px;
+    background-size: 1280px 600px;
     background-image: url(../images/customers/customers-bg-desk@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -82,9 +82,7 @@
   &__item {
     background-color: #fff;
     display: block;
-    border-top-right-radius: 10%;
-    border-end-end-radius: 10%;
-    border-end-start-radius: 10%;
+    border-radius: 0px 30px 30px 30px;
     padding: 8px;
 
     @media screen and (max-width: 479px) {
@@ -94,9 +92,6 @@
       width: 336px;
     }
     @media screen and (min-width: $desktop) {
-      border-top-right-radius: 5%;
-      border-end-end-radius: 5%;
-      border-end-start-radius: 5%;
       width: 500px;
     }
   }
