@@ -171,8 +171,7 @@
 }
 
 .hero__vector--color{
-    // height: 30px;
-    // width: 30px;
+
     fill: var(--main-text-color);
     &:hover{
         fill: var(--dark-green);
@@ -181,8 +180,7 @@
 .hero__vector--left{
     height: 50px;
     width: 50px;
-    // margin-left: 12px;
-    // margin-top: 5px;
+ 
     @media screen  and (min-width: 768px){
         height: 35px;
         width: 45px;
@@ -196,7 +194,7 @@
 }
 .hero__vector--right{
     height: 40px;
-    // width: 16px;
+    
     
 }
 
