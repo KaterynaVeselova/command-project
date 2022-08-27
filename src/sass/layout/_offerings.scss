@@ -181,5 +181,10 @@
 
     background-color: var(--bgc-secondary);
     border: 2px solid var(--dark-green);
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--border-onhover);
+    }
   }
 }
