@@ -1,18 +1,27 @@
 .section {
   align-items: center;
   padding: 60px 20px;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
   @media screen and (min-width: $tablet) {
     padding: 60px 32px 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
   }
   @media screen and (min-width: $desktop) {
     padding: 100px 125px 200px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
   }
 }
 .customers__bg__img {
   background: no-repeat;
-
   height: 770px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-image: url(../images/customers/customers-bg-mob@1x.jpg);
   @media (min-device-pixel-ratio: 2),
@@ -45,29 +54,29 @@
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
-
+  line-height: calc(33px / 28px);
   color: var(--main-text-color);
   margin-bottom: 20px;
 }
 .section__description {
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 16px;
-
+  line-height: calc(16px / 14px);
   color: var(--main-text-color);
   margin-bottom: 32px;
 }
 .customers__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 24px;
 
   @media screen and (min-width: $tablet) {
     gap: 32px;
+    flex-direction: row;
   }
   @media screen and (min-width: $desktop) {
     gap: 140px;
+    flex-direction: row;
   }
 
   &__item {
@@ -81,8 +90,25 @@
     @media screen and (max-width: 479px) {
       max-width: 280px;
     }
+    @media screen and (min-width: $tablet) {
+      width: 336px;
+    }
+    @media screen and (min-width: $desktop) {
+      border-top-right-radius: 5%;
+      border-end-end-radius: 5%;
+      border-end-start-radius: 5%;
+      width: 500px;
+    }
   }
+}
+
+.rate__list {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+
   &__icon {
+    fill: #ffe550;
   }
 }
 
@@ -91,8 +117,7 @@
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
-
+  line-height: calc(19px / 16px);
   color: var(--main-text-color);
   margin-top: 28px;
   margin-bottom: 40px;
@@ -114,17 +139,15 @@
   &__name {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 13.6667px;
-    line-height: 150%;
-
+    font-size: 14px;
+    line-height: calc(21px / 14px);
     color: var(--main-text-color);
     margin: 0;
   }
   &__description {
     font-family: var(--main-font);
-    font-size: 13.6667px;
-    line-height: 150%;
-
+    font-size: 14px;
+    line-height: calc(21px / 14px);
     color: var(--main-text-color);
   }
 }
