@@ -1,11 +1,14 @@
 <header class="header">
   <div class="container">
     <div class="header__wrap">
+      <!-- logo -->
       <a class="logo" href="#home">
         <svg class="logo__svg" width="65" height="51">
           <use href="./images/sprite.svg#logo"></use>
         </svg>
       </a>
+
+      <!-- desktop navigation -->
       <div class="nav-wrap">
         <nav class="nav">
           <ul class="nav__list">
@@ -29,11 +32,39 @@
         <button class="btn-order btn-order--filled">Order Now</button>
       </div>
 
-      <button class="btn-menu">
-        <svg class="btn-menu__svg" width="28" height="28">
+      <!-- mobile navigation -->
+      <button class="burger-menu" data-menu-open>
+        <svg class="burger-menu__svg" width="28" height="28">
           <use href="./images/sprite.svg#mobile-menu"></use>
         </svg>
       </button>
+
+      <div class="menu-backdrop" data-menu>
+        <div class="menu-container">
+          <button class="menu-close" type="button" data-menu-close>
+            <svg class="menu-close__icon" width="24" height="24">
+              <use href="./images/sprite.svg#menu-close"></use>
+            </svg>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#offerings" class="nav__link">Service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#favorites" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subscribe" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </header>
