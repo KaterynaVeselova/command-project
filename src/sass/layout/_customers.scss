@@ -1,4 +1,5 @@
 .section {
+  align-items: center;
   @media screen and (min-width: $mobile) {
     padding: 60px 20px;
   }
@@ -11,6 +12,7 @@
 }
 .customers__bg__img {
   background: no-repeat;
+
   @media screen and (min-width: $mobile) {
     height: 770px;
     background-image: url(../images/customers/customers-bg-mob@1x.jpg);
@@ -73,7 +75,7 @@
   &__item {
     background-color: #fff;
     display: block;
-    width: 280px;
+    min-width: 280px;
     height: 250px;
     border-top-right-radius: 10%;
     border-end-end-radius: 10%;
