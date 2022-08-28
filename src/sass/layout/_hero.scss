@@ -1,23 +1,36 @@
-.container{
-    
+.hero{
     background-color: #F5F5F5;
-}
 
+}
 .hero__general--top{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     position: relative;
-    // flex-direction: column; 
+    
 
     @media screen  and (min-width: 320px){
         flex-direction: column;
-        
+        min-width: 280px;
+        height: 369px;   
+    }
+    @media screen  and (min-width: 768px){
+        width: 704px;
+        height: 469px;
+        padding-bottom: 0px;
     }
     @media screen  and (min-width: 1280px){
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
+        padding-top: 0px;
+        padding-top: 158px;
+        width: 1248px;
+        height: 608px;
+        
     }
 }
 
@@ -37,11 +50,12 @@
 .hero__title--top{
     color: var(--main-text-color);  
     @media screen  and (min-width: 320px){
-        margin-top: 60px;
+        margin-bottom: 28px;
         font-size: 28px;
         line-height: 33px;   
     } 
     @media screen  and (min-width: 768px){
+        margin-bottom: 44px;
         width: 537px;
         font-size: 42px;
         line-height: 120%;    
@@ -50,8 +64,8 @@
         font-weight: 700;
         font-size: 48px;
         line-height: 120%;
-        margin-top: 158px;
         width: 503px;
+        margin-bottom: 28px;
 
     }
 }
@@ -60,7 +74,6 @@
     color: var(--main-text-color);
     @media screen  and (min-width: 320px){
         font-size: 14px;
-        margin-top: 28px;
         margin-bottom: 28px;    
     } 
     @media screen  and (min-width: 768px){
@@ -68,11 +81,9 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 150%; 
-        margin-top: 44px;
         margin-bottom: 40px;
     }
     @media screen  and (min-width: 1280px){
-        margin-top: 28px;
         margin-bottom: 40px;
         font-weight: 400;
         font-size: 16px;
@@ -85,13 +96,15 @@
 .hero__foto--top{
     position: relative;
     border-radius: 50%;
-    
+    // overflow: hidden;
+
     @media screen  and (min-width: 320px){
         display: none;    
     } 
+    
     @media screen  and (min-width: 768px){
         display: block;
-        width: 336px;
+        width: 320px;
         height: 320px;
         border: 14px solid var(--yellow-main);
         
@@ -107,14 +120,14 @@
         margin-right: 14px;
         width: 580px;
         height: 580px;
-        top: 14px;
-        left: 0px;
+        top: -142px;
+        left: -13px;
 
     }
 }
 
 .hero__foto--size{
-    width: 580px;
+    width: 100%;
 }
 
 .hero__slider--but{
@@ -125,22 +138,24 @@
     background: var(--bgc-main);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    transform: rotate(0deg);
+    
     align-items: center;
     &:hover .hero__vector--color{
         fill:  var(--dark-green);
     }
     @media screen  and (min-width: 768px){
-        right: 300px;
+        right: 280px;
         top: 135px;
         height: 28px;
         width: 34px;
+        padding: 4px 9px 4px 13px;
     }
     @media screen  and (min-width: 1280px){
         right: 520px;
         top: 250px;
         height: 40px;
         width: 48px;
+        padding: 6px 13px 6px 18px;
     }
 
 }
@@ -166,22 +181,18 @@
 }
 .hero__vector{
     @media screen  and (min-width: 768px){
-        transform: translate(-13px, 0px);
-        height: 30px;
-        width: 45px;
-        
+        height: 20px;
+        width: 11px;   
     }
     @media screen  and (min-width: 1280px){
-        
-        transform: translate(-6px, 2px);
-        height: 40px;
-        width: 45px;
+        height: 29px;
+        width: 16px;
     }
 }
 
 .hero__btn{
     background: var(--btn-default);
-    text-align: right;
+    
     color: var(--main-text-color);
     border: none;
     height: 32px;
@@ -189,11 +200,11 @@
     text-align: center;
     @extend %btn;
     @media screen  and (min-width: $tablet){
-        margin-bottom: 738px;
+        margin-bottom: 73px;
         
     }
     @media screen  and (min-width: 1280px){
-        margin-bottom: 164px;
+        margin-bottom: 163px;
     }
 
     &:hover{
