@@ -1,20 +1,24 @@
 .footer {
+  height: 619px;
   background-image: url('../images/footer/orange-mobile.png'),
     url('../images/footer/apple-and-orange-mobile.png'),
     url('../images/footer/apple-mobile.png');
-  background-size: 104px, 66px, 116px;
   background-repeat: no-repeat;
-  background-position: top 0px right 0px, bottom 0px, top 0px left 0px;
+  background-position: right 0, bottom, 0 132px;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   position: relative;
+  @media screen and (min-width: $mobile) {
+    background-position: right 0, bottom, 0 132px;
+  }
 
   @media screen and (min-width: $tablet) {
     background-image: url('../images/footer/footer-background-tablet.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
   }
   @media screen and (min-width: $desktop) {
+    background-size: 100%;
     background-image: url('../images/footer/footer-background-desktop.png');
   }
 }
@@ -33,12 +37,9 @@
   }
 }
 .footer__nav {
-  display: flex;
-  align-items: center;
-  margin: 64px 101px 40px 81px;
+  margin: 64px 0px 40px 81px;
 
   @media screen and (min-width: $tablet) {
-    display: inline-flex;
     margin: 118px 0px 57px 114px;
   }
 
@@ -50,7 +51,6 @@
 .nav__list--footer {
   gap: 20px;
   @media screen and (min-width: $tablet) {
-    display: inline-flex;
     gap: 28px;
   }
 }
@@ -60,16 +60,19 @@
 
   &:hover,
   &:focus {
+    background-color: transparent;
     color: var(--btn-default);
     text-decoration: underline;
   }
 }
 
 .footer__subscribe {
+  margin-bottom: 60px;
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+    margin-right: 21px;
     position: absolute;
     top: 0;
     right: 0;
@@ -87,17 +90,19 @@
   @media screen and (min-width: $tablet) {
     flex-direction: row;
   }
-  @media screen and (min-width: $desktop) {
-    margin-left: auto;
-  }
 }
 .subscribe__input--footer {
   transition: var(--animation);
+  position: relative;
 
   @media screen and (min-width: $tablet) {
     width: 279px;
     margin-right: 13px;
     margin-bottom: 12px;
+
+    &:invalid {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -111,13 +116,7 @@
   transition: var(--animation);
 
   @media screen and (min-width: $tablet) {
-    margin-left: 0;
     margin-bottom: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    margin-left: auto;
-    flex-direction: row-reverse;
   }
 
   &:hover,
@@ -139,7 +138,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: auto;
     margin-left: 0;
   }
 }
@@ -151,37 +149,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
     margin-top: 100px;
-    margin-bottom: 100px;
     flex-direction: row;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 80px;
+    margin-top: 147px;
   }
 }
 
 .footer__terms {
-  margin-top: 60px;
   margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
-    margin-top: 0;
-    margin-bottom: 8px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 100px;
+    margin: 0;
   }
 }
 .footer-terms__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media screen and (min-width: $tablet) {
-    justify-content: center;
-  }
 }
+
 .footer-terms__item {
   &:last-child {
     @media screen and (min-width: $tablet) {
@@ -218,6 +207,34 @@
     line-height: calc(14 / 12);
   }
 }
+.error__wrap {
+  position: absolute;
+  top: 335;
+  @media screen and (min-width: $tablet) {
+    top: 265;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 76;
+  }
+}
 .error__icon {
   fill: var(--error-color);
+  opacity: 0;
+
+  .subscribe__input:invalid:required:not(:placeholder-shown) ~ .error__wrap & {
+    transition: var(--animation);
+    opacity: 1;
+  }
+}
+.error__text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(15 / 10);
+  color: var(--error-color);
+  opacity: 0;
+
+  .subscribe__input:invalid:required:not(:placeholder-shown) ~ .error__wrap & {
+    transition: var(--animation);
+    opacity: 1;
+  }
 }
