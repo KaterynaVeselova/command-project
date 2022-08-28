@@ -1,20 +1,33 @@
 
 .hero__general--top{
+    padding-top: 60px;
+    padding-bottom: 50px;
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     position: relative;
-    // flex-direction: column; 
+    
 
     @media screen  and (min-width: 320px){
         flex-direction: column;
-        
+        width: 280px;
+        height: 369px;   
+    }
+    @media screen  and (min-width: 768px){
+        width: 704px;
+        height: 469px;
+        padding-bottom: 0px;
     }
     @media screen  and (min-width: 1280px){
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
+        padding-top: 0px;
+        padding-top: 158px;
+        width: 1248px;
+        height: 608px;
+        
     }
 }
 
@@ -34,11 +47,12 @@
 .hero__title--top{
     color: var(--main-text-color);  
     @media screen  and (min-width: 320px){
-        margin-top: 60px;
+        margin-bottom: 28px;
         font-size: 28px;
         line-height: 33px;   
     } 
     @media screen  and (min-width: 768px){
+        margin-bottom: 44px;
         width: 537px;
         font-size: 42px;
         line-height: 120%;    
@@ -47,8 +61,8 @@
         font-weight: 700;
         font-size: 48px;
         line-height: 120%;
-        margin-top: 158px;
         width: 503px;
+        margin-bottom: 28px;
 
     }
 }
@@ -57,7 +71,6 @@
     color: var(--main-text-color);
     @media screen  and (min-width: 320px){
         font-size: 14px;
-        margin-top: 28px;
         margin-bottom: 28px;    
     } 
     @media screen  and (min-width: 768px){
@@ -65,11 +78,9 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 150%; 
-        margin-top: 44px;
         margin-bottom: 40px;
     }
     @media screen  and (min-width: 1280px){
-        margin-top: 28px;
         margin-bottom: 40px;
         font-weight: 400;
         font-size: 16px;
@@ -105,8 +116,8 @@
         margin-right: 14px;
         width: 580px;
         height: 580px;
-        top: 14px;
-        left: 0px;
+        top: -142px;
+        left: -13px;
 
     }
 }
@@ -187,11 +198,11 @@
     text-align: center;
     @extend %btn;
     @media screen  and (min-width: $tablet){
-        margin-bottom: 738px;
+        margin-bottom: 73px;
         
     }
     @media screen  and (min-width: 1280px){
-        margin-bottom: 164px;
+        margin-bottom: 163px;
     }
 
     &:hover{
