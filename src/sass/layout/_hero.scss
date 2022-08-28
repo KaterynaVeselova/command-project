@@ -1,5 +1,5 @@
 .hero{
-    background-color: #F5F5F5;
+    background-color: #fefefe;
 
 }
 .hero__general--top{
@@ -8,7 +8,7 @@
     
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    
     position: relative;
     
 
@@ -98,12 +98,8 @@
 .hero__foto--top{
     position: relative;
     border-radius: 50%;
-    // overflow: hidden;
+    display: none; 
 
-    @media screen  and (min-width: 320px){
-        display: none;    
-    } 
-    
     @media screen  and (min-width: 768px){
         display: block;
         width: 320px;
@@ -201,6 +197,7 @@
     width: 100px;
     text-align: center;
     @extend %btn;
+    transition: background 250ms var(--animation);
     @media screen  and (min-width: $tablet){
         margin-bottom: 73px;
         
