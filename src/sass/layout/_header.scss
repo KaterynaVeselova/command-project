@@ -1,11 +1,13 @@
 .header {
   background-color: var(--bgc-secondary);
 }
+
 .header__wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .logo {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -19,14 +21,22 @@
   height: 28px;
   display: contents;
 }
-.menu-close {
+
+.burger-close {
   width: 24px;
   height: 24px;
   display: inline-block;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin-top: 4px;
+  margin-right: 4px;
 }
 
 .burger-menu,
-.menu-close {
+.burger-close {
   text-align: center;
 
   background-color: transparent;
@@ -37,6 +47,7 @@
     display: none;
   }
 }
+
 .burger-menu__svg {
   fill: var(--dark-green);
   transition: fill var(--animation);
@@ -45,25 +56,11 @@
     fill: var(--yellow-main);
   }
 }
-// .menu-close__svg {
-//   fill: var(--main-text-color);
-//   transition: fill var(--animation);
-//   .menu-close:hover &,
-//   .menu-close:focus & {
-//     fill: var(--yellow-main);
-//   }
-// }
-.menu-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-50% -50%);
-  margin-top: 4px;
-  margin-right: 4px;
-}
+
 .menu-backdrop {
   padding-left: 20px;
   padding-right: 20px;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -144,7 +141,7 @@
   color: var(--secondary-text-color);
 
   display: block;
-
+  text-decoration: none;
   transition: background-color var(--animation);
 
   &:hover,
@@ -157,7 +154,7 @@
     padding-top: 28px;
     padding-bottom: 28px;
 
-    transition: color var(--animation);
+    transition: color var(--animation), text-decoration var(--animation);
 
     &:hover,
     &:focus {
