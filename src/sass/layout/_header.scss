@@ -45,25 +45,19 @@
     fill: var(--yellow-main);
   }
 }
-// .menu-close__svg {
-//   fill: var(--main-text-color);
-//   transition: fill var(--animation);
-//   .menu-close:hover &,
-//   .menu-close:focus & {
-//     fill: var(--yellow-main);
-//   }
-// }
+
 .menu-close {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-50% -50%);
+
   margin-top: 4px;
   margin-right: 4px;
 }
 .menu-backdrop {
   padding-left: 20px;
   padding-right: 20px;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -144,7 +138,7 @@
   color: var(--secondary-text-color);
 
   display: block;
-
+  text-decoration: none;
   transition: background-color var(--animation);
 
   &:hover,
@@ -157,7 +151,7 @@
     padding-top: 28px;
     padding-bottom: 28px;
 
-    transition: color var(--animation);
+    transition: color var(--animation), text-decoration var(--animation);
 
     &:hover,
     &:focus {
