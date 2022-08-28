@@ -13,21 +13,24 @@
 
       <div class="hero__foto--top">
 
-        <div class="hero__slider--but-l">
-          <svg  class="hero__vector--left" >
+        <button class="hero__slider--but">
+          <svg  class="hero__vector" >
             <use  class="hero__vector--color" href="./images/sprite.svg#arrow-left" ></use>
           </svg>
-        </div>
+        </button>
+
       <picture>
-        <source srcset="./images/hero/hero1_1200@1x.png 1x, ./images/hero/hero1_1200@2x.png 2x" media="(min-width: 1280px)"/>
+        <source srcset="./images/hero/hero1_1200@1x.png 1x, ./images/hero/hero1_1200@2x.png 2x" media="(min-width: $desktop)"/>
         <source srcset="./images/hero/hero1_768@1x.png 1x, ./images/hero/hero1_768@2x.png 2x" media="(min-width: 768px)"/>
-        <img class="hero__foto--size" src="./images/hero/hero1_1200@1x.png" alt="Фото блюда"/>
+        <img class="hero__foto--size" src="./images/hero/hero1_768@1x.png" alt="Фото блюда"/>
       </picture>
-        <div class="hero__slider--but-r">
-        <svg  class="hero__vector--left" >
+
+        <button class="hero__slider--but but-r">
+        <svg  class="hero__vector" >
           <use class="hero__vector--color" href="./images/sprite.svg#arrow-right"></use>
         </svg>
-        </div>
+        </button>
+
       </div>
     </div>
   </div> 
