@@ -15,17 +15,17 @@
 .burger-menu {
   width: 28px;
   height: 28px;
+  display: contents;
 }
 .menu-close {
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .burger-menu,
 .menu-close {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 
   background-color: transparent;
   border: none;
@@ -84,8 +84,9 @@
   }
 }
 .menu-container {
-  margin-top: 50px;
   margin-left: auto;
+  margin-top: 50px;
+
   max-width: 130px;
   overflow: hidden;
 
