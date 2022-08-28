@@ -1,9 +1,6 @@
-.container{
-    
-    background-color: #F5F5F5;
-}
 
 .hero__general--top{
+    background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,6 +82,7 @@
 .hero__foto--top{
     position: relative;
     border-radius: 50%;
+    overflow: hidden;
     
     @media screen  and (min-width: 320px){
         display: none;    
