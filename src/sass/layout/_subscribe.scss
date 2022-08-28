@@ -133,9 +133,15 @@
   background-color: var(--btn-default);
   align-items: center;
 
-  font-weight: 400;
+  font-weight: 500;
   color: var(--main-text-color);
   outline: none;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-onhover);
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;

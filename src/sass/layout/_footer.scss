@@ -1,11 +1,21 @@
 .footer {
-  //   background-image: url('../images/footer/fuit-background-mobile.png');
-  //   background-size: cover;
-  //   background-position: center;
+  background-image: url('../images/footer/orange-mobile.png'),
+    url('../images/footer/apple-and-orange-mobile.png'),
+    url('../images/footer/apple-mobile.png');
+  background-size: 104px, 66px, 116px;
+  background-repeat: no-repeat;
+  background-position: top 0px right 0px, bottom 0px, top 0px left 0px;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  position: relative;
 
   @media screen and (min-width: $tablet) {
-    // background-image: url('../images/footer/fruit-background-tablet.png');
+    background-image: url('../images/footer/footer-background-tablet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/footer/footer-background-desktop.png');
   }
 }
 
@@ -37,57 +47,38 @@
     margin-bottom: 0;
   }
 }
-.footer-nav__list {
+.nav__list--footer {
+  gap: 20px;
   @media screen and (min-width: $tablet) {
     display: inline-flex;
+    gap: 28px;
   }
 }
-.footer-nav__item {
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  color: var(--secondary-text-color);
 
-  padding-bottom: 20px;
-
-  @media screen and (min-width: $tablet) {
-    padding-right: 28px;
-  }
-
-  &:last-child {
-    padding-bottom: 0;
-
-    @media screen and (min-width: $tablet) {
-      padding-right: 0;
-    }
-  }
-}
-.footer-nav__link {
-  cursor: pointer;
-  transition: var(--animation);
+.nav__link--footer {
+  padding: 0;
 
   &:hover,
   &:focus {
-    @media screen and (min-width: $mobile) {
-      color: var(--btn-default);
-      text-decoration: underline;
-    }
+    color: var(--btn-default);
+    text-decoration: underline;
   }
 }
+
 .footer__subscribe {
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
-    // margin-left: auto;
-    float: right;
-    transform: translateY(-160);
     margin-top: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
-.footer-subscribe__title {
+.subscribe__title--footer {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
-  color: var(--main-text-color);
   margin-bottom: 12px;
 }
 .footer-subscribe__form {
@@ -100,15 +91,7 @@
     margin-left: auto;
   }
 }
-.footer-subscribe__input {
-  display: block;
-  width: 100%;
-  padding: 11px;
-
-  border: 0.854167px solid var(--yellow-main);
-  border-radius: 30px;
-  margin-bottom: 20px;
-  outline: none;
+.subscribe__input--footer {
   transition: var(--animation);
 
   @media screen and (min-width: $tablet) {
@@ -116,38 +99,15 @@
     margin-right: 13px;
     margin-bottom: 12px;
   }
-
-  &:valid {
-    border: 0.854167px solid var(--dark-green);
-    border-radius: 30px;
-  }
-  &:not(:placeholder-shown):required:invalid {
-    border: 0.854167px solid var(--error-color);
-    border-radius: 30px;
-  }
-
-  &::placeholder {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(18 / 12);
-  }
 }
-.footer-subscribe__btn {
-  @extend %btn;
-  display: flex;
-  margin-left: auto;
-  width: 106px;
-  height: 42px;
-  padding: 11px 22px;
+
+.subscribe__btn--footer {
   border: 0.854167px solid var(--dark-green);
   background-color: var(--bgc-secondary);
-  align-items: center;
   margin-bottom: 20px;
 
   font-weight: 500;
   color: var(--main-text-color);
-  outline: none;
   transition: var(--animation);
 
   @media screen and (min-width: $tablet) {
@@ -174,7 +134,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: auto;
-    margin-bottom: 80px;
     font-size: 12px;
     line-height: calc(14 / 12);
   }
@@ -189,13 +148,21 @@
   color: var(--dark-green);
 }
 .footer-terms__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 80px;
   }
 }
+
 .footer__terms {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -240,20 +207,14 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 60px;
 
   font-size: 10px;
   line-height: calc(12 / 10);
   color: var(--main-text-color);
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 8px;
-    justify-content: center;
     margin-left: auto;
     font-size: 12px;
     line-height: calc(14 / 12);
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 100px;
   }
 }
