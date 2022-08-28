@@ -1,8 +1,11 @@
+.hero{
+    background-color: #F5F5F5;
 
+}
 .hero__general--top{
     padding-top: 60px;
     padding-bottom: 50px;
-    background-color: #F5F5F5;
+    
     display: flex;
     justify-content: space-between;
     // align-items: center;
@@ -11,7 +14,7 @@
 
     @media screen  and (min-width: 320px){
         flex-direction: column;
-        width: 280px;
+        min-width: 280px;
         height: 369px;   
     }
     @media screen  and (min-width: 768px){
@@ -93,14 +96,15 @@
 .hero__foto--top{
     position: relative;
     border-radius: 50%;
-    overflow: hidden;
-    
+    // overflow: hidden;
+
     @media screen  and (min-width: 320px){
         display: none;    
     } 
+    
     @media screen  and (min-width: 768px){
         display: block;
-        width: 336px;
+        width: 320px;
         height: 320px;
         border: 14px solid var(--yellow-main);
         
@@ -123,7 +127,7 @@
 }
 
 .hero__foto--size{
-    width: 580px;
+    width: 100%;
 }
 
 .hero__slider--but{
@@ -134,22 +138,24 @@
     background: var(--bgc-main);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    transform: rotate(0deg);
+    
     align-items: center;
     &:hover .hero__vector--color{
         fill:  var(--dark-green);
     }
     @media screen  and (min-width: 768px){
-        right: 300px;
+        right: 280px;
         top: 135px;
         height: 28px;
         width: 34px;
+        padding: 4px 9px 4px 13px;
     }
     @media screen  and (min-width: 1280px){
         right: 520px;
         top: 250px;
         height: 40px;
         width: 48px;
+        padding: 6px 13px 6px 18px;
     }
 
 }
@@ -175,22 +181,18 @@
 }
 .hero__vector{
     @media screen  and (min-width: 768px){
-        transform: translate(-13px, 0px);
-        height: 30px;
-        width: 45px;
-        
+        height: 20px;
+        width: 11px;   
     }
     @media screen  and (min-width: 1280px){
-        
-        transform: translate(-6px, 2px);
-        height: 40px;
-        width: 45px;
+        height: 29px;
+        width: 16px;
     }
 }
 
 .hero__btn{
     background: var(--btn-default);
-    text-align: right;
+    
     color: var(--main-text-color);
     border: none;
     height: 32px;
