@@ -13,20 +13,48 @@
   
         <div class="hero__foto--top">
   
-          <button class="hero__slider--but">
+          <button class="hero__slider--but btn btn-left">
             <svg  class="hero__vector" >
               <use  class="hero__vector--color" href="./images/sprite.svg#arrow-left-simple" ></use>
             </svg>
           </button>
-  
-                  <picture>
-                    <source srcset="./images/hero/hero1_1200@1x.png 1x, ./images/hero/hero1_1200@2x.png 2x" media="(min-width: 1280px)"/>
-                    <source srcset="./images/hero/hero1_768@1x.png 1x, ./images/hero/hero1_768@2x.png 2x" media="(min-width: 768px)"/>
-                    <img class="hero__foto--size" src="./images/hero/hero1_768@1x.png" alt="Фото блюда"/>
-                  </picture>
+
+           <!-- Swiper -->
+           <div class="wrap">
+            <div class="carusel">
+                <div class="carusel__container">
+                    <div class="carusel__slide">
+                      <!-- <picture >
+                        <source srcset="./images/hero/big_hiro1@1x.png 1x, ./images/hero/big_hiro1@2x.png 2x" media="(min-width: 1280px)"/>
+                        <source srcset="./images/hero/small_hiro1@1x.png 1x, ./images/hero/small_hiro1@2x.png 2x" media="(min-width: 768px)"/>
+                        <img class="hero__foto--size" src="./images/hero/small_hiro1@1x.png" alt="Фото блюда"/>
+                      </picture>
+                      <picture >
+                        <source srcset="./images/hero/big_hiro2@1x.png 1x, ./images/hero/big_hiro2@2x.png 2x" media="(min-width: 1280px)"/>
+                        <source srcset="./images/hero/small_hiro2@1x.png 1x, ./images/hero/small_hiro2@2x.png 2x" media="(min-width: 768px)"/>
+                        <img class="hero__foto--size" src="./images/hero/small_hiro2@1x.png" alt="Фото блюда"/>
+                      </picture>
+                      <picture >
+                        <source srcset="./images/hero/big_hiro3@1x.png 1x, ./images/hero/big_hiro3@2x.png 2x" media="(min-width: 1280px)"/>
+                        <source srcset="./images/hero/small_hiro3@1x.png 1x, ./images/hero/small_hiro3@2x.png 2x" media="(min-width: 768px)"/>
+                        <img class="hero__foto--size" src="./images/hero/small_hiro3@1x.png" alt="Фото блюда"/>
+                      </picture> -->
+                        <img class="carusel__img" src="./images/hero/big_hiro1@1x.png"  alt="">
+                        <img class="carusel__img" src="./images/hero/big_hiro2@1x.png"  alt="">
+                        <img class="carusel__img" src="./images/hero/big_hiro3@1x.png"  alt="">
+                    </div>    
+                </div>
+              <div class="btnWrap"></div>  
+            </div>
+        </div>
+    
+        <script src="./js/script.js"></script> 
+
+          
+                  
         
   
-          <button class="hero__slider--but but-r">
+          <button class="hero__slider--but but-r  btn btn-right">
           <svg  class="hero__vector" >
             <use class="hero__vector--color" href="./images/sprite.svg#arrow-right-simple"></use>
           </svg>
@@ -35,6 +63,7 @@
         </div>
       </div>
     </div> 
+
   
   
     
