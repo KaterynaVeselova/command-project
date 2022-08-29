@@ -1,5 +1,4 @@
 .footer {
-  height: 619px;
   background-image: url('../images/footer/orange-mobile.png'),
     url('../images/footer/apple-and-orange-mobile.png'),
     url('../images/footer/apple-mobile.png');
@@ -12,13 +11,13 @@
   }
 
   @media screen and (min-width: $tablet) {
+    height: 100%;
+    background-position: bottom center;
     background-image: url('../images/footer/footer-background-tablet.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
   }
   @media screen and (min-width: $desktop) {
-    background-size: 100%;
     background-image: url('../images/footer/footer-background-desktop.png');
   }
 }
@@ -100,7 +99,7 @@
     margin-right: 13px;
     margin-bottom: 12px;
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       margin-bottom: 25px;
     }
   }
@@ -149,8 +148,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 50px;
 
   @media screen and (min-width: $tablet) {
+    align-items: center;
+    padding-bottom: 90px;
     margin-top: 100px;
     flex-direction: row;
   }
@@ -182,11 +184,11 @@
   }
 }
 .footer-terms__link {
+  font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration: underline;
   color: var(--dark-green);
-
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -196,11 +198,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
+  font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
   color: var(--main-text-color);
-
   @media screen and (min-width: $tablet) {
     margin-left: auto;
     font-size: 12px;
@@ -223,6 +224,7 @@
 
   .subscribe__input:invalid:required:not(:placeholder-shown) ~ .error__wrap & {
     transition: var(--animation);
+    fill: var(--error-color);
     opacity: 1;
   }
 }
