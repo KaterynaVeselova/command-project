@@ -1,44 +1,33 @@
 .subscribe {
   margin-top: -40px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: -73px;
     padding-bottom: 100px;
   }
-  @media screen and (min-width: 1200px) {
-    margin-top: -40px;
+  @media screen and (min-width: $desktop) {
+    margin-top: -64px;
     padding-bottom: 64px;
-  }
-}
-.container__subscribe {
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-  }
-  @media screen and (min-width: 1200px) {
-    height: 266px;
   }
 }
 .subscribe__image {
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
-  position: relative;
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    justify-content: right;
+    margin-right: auto;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1200px) {
-    flex-direction: column-reverse;
+  @media screen and (min-width: $desktop) {
+    justify-content: baseline;
     float: right;
-    margin-left: 0;
     margin-bottom: 0;
-    margin-top: -40px;
   }
 }
 .subscribe__wrap {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
   }
@@ -54,12 +43,13 @@
   margin-bottom: 20px;
   text-align: left;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 42px;
     line-height: calc(50 / 42);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
+    padding-top: 46px;
     margin-bottom: 20px;
   }
 }
@@ -70,17 +60,22 @@
   margin-bottom: 40px;
   text-align: left;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(24 / 16);
     margin-bottom: 24px;
   }
 }
-
+.subscribe__label {
+  position: relative;
+}
 .subscribe__form {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 36px;
   }
 }
 
@@ -115,16 +110,14 @@
     line-height: calc(18 / 12);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 394px;
     margin-right: 19px;
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 394px;
+  @media screen and (min-width: $desktop) {
     margin-right: 32px;
-    margin-bottom: 0;
   }
 }
 
@@ -149,23 +142,14 @@
     background-color: var(--btn-onhover);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 0;
   }
 }
 
 .error__wrap--subscribe {
   display: flex;
+  gap: 4px;
   transition: var(--animation);
-  margin-top: -15;
-
-  @media screen and (min-width: $mobile) {
-    margin-top: -65;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-top: 80;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 112;
-  }
+  margin-top: 10;
 }
