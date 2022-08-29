@@ -156,16 +156,14 @@
 
 .error__wrap--subscribe {
   display: flex;
-  transition: var(--animation);
-  margin-top: -15;
 
   @media screen and (min-width: $mobile) {
-    margin-top: -65;
+    margin-top: -60;
   }
   @media screen and (min-width: $tablet) {
-    margin-top: 80;
+    margin-top: 85;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 112;
+    margin-top: 115;
   }
 }
