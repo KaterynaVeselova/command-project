@@ -210,16 +210,9 @@
 }
 .error__wrap {
   position: absolute;
-  top: 335;
-  @media screen and (min-width: $tablet) {
-    top: 265;
-  }
-  @media screen and (min-width: $desktop) {
-    top: 76;
-  }
+  top: 40;
 }
 .error__icon {
-  fill: var(--error-color);
   opacity: 0;
 
   .subscribe__input:invalid:required:not(:placeholder-shown) ~ .error__wrap & {
