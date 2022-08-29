@@ -188,7 +188,6 @@
   line-height: calc(12 / 10);
   text-decoration: underline;
   color: var(--dark-green);
-
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -198,11 +197,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
   font-size: 10px;
   line-height: calc(12 / 10);
   color: var(--main-text-color);
-
   @media screen and (min-width: $tablet) {
     margin-left: auto;
     font-size: 12px;
@@ -225,6 +222,7 @@
 
   .subscribe__input:invalid:required:not(:placeholder-shown) ~ .error__wrap & {
     transition: var(--animation);
+    fill: var(--error-color);
     opacity: 1;
   }
 }
