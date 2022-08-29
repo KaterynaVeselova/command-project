@@ -1,5 +1,4 @@
 .footer {
-  height: 619px;
   background-image: url('../images/footer/orange-mobile.png'),
     url('../images/footer/apple-and-orange-mobile.png'),
     url('../images/footer/apple-mobile.png');
@@ -12,13 +11,13 @@
   }
 
   @media screen and (min-width: $tablet) {
+    height: 100%;
+    background-position: bottom center;
     background-image: url('../images/footer/footer-background-tablet.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
   }
   @media screen and (min-width: $desktop) {
-    background-size: 100%;
     background-image: url('../images/footer/footer-background-desktop.png');
   }
 }
@@ -100,7 +99,7 @@
     margin-right: 13px;
     margin-bottom: 12px;
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       margin-bottom: 25px;
     }
   }
@@ -149,8 +148,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
 
   @media screen and (min-width: $tablet) {
+    padding-bottom: 90px;
     margin-top: 100px;
     flex-direction: row;
   }
