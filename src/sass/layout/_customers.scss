@@ -7,13 +7,11 @@
   margin-left: auto;
 
   @media screen and (min-width: $mobile) {
-    padding-top: 60px;
     padding-bottom: 120px;
     width: 480px;
   }
   @media screen and (min-width: $tablet) {
     width: 768px;
-    padding-top: 60px;
     padding-bottom: 120px;
   }
   @media screen and (min-width: $desktop) {
@@ -24,7 +22,7 @@
 .customers__bg__img {
   background: var(--bgc-main);
   background: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: bottom;
 
   background-image: url(../images/customers/customers-bg-mob@1x.png);
