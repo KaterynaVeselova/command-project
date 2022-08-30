@@ -1,59 +1,67 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url('../images/footer/orange-mobile.png'),
     url('../images/footer/apple-and-orange-mobile.png'),
     url('../images/footer/apple-mobile.png');
   background-repeat: no-repeat;
   background-position: right 0, bottom, 0 132px;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  position: relative;
   @media screen and (min-width: $mobile) {
     background-position: right 0, bottom, 0 132px;
   }
 
   @media screen and (min-width: $tablet) {
-    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-position: bottom center;
     background-image: url('../images/footer/footer-background-tablet.png');
     background-repeat: no-repeat;
     background-size: 100%;
   }
   @media screen and (min-width: $desktop) {
+    padding-top: 64px;
     background-image: url('../images/footer/footer-background-desktop.png');
   }
 }
-
-.footer-nav__wrap {
-  display: flex;
+.footer__wrap {
   @media screen and (min-width: $tablet) {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
   }
-}
-
-.footer__logo {
-  margin-top: 60px;
-  @media screen and (min-width: $tablet) {
-    margin-top: 100px;
-  }
-}
-.footer__nav {
-  margin: 64px 0px 40px 81px;
-
-  @media screen and (min-width: $tablet) {
-    margin: 118px 0px 57px 114px;
-  }
-
   @media screen and (min-width: $desktop) {
-    margin-left: 145px;
-    margin-bottom: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 80px;
   }
 }
-.nav__list--footer {
-  gap: 20px;
+.nav__wrap--footer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
-    gap: 28px;
+    margin-bottom: 57px;
+  }
+}
+.logo--footer {
+  padding: 0;
+  align-items: flex-start;
+  margin-right: 81px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 114px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 145px;
   }
 }
 
+.nav__list--footer {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .nav__link--footer {
   padding: 0;
 
@@ -67,20 +75,19 @@
 
 .footer__subscribe {
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
   @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-right: 21px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 .subscribe__title--footer {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
+  margin-top: 0;
   margin-bottom: 12px;
 }
 .footer-subscribe__form {
@@ -92,7 +99,6 @@
 }
 .subscribe__input--footer {
   transition: var(--animation);
-  position: relative;
 
   @media screen and (min-width: $tablet) {
     width: 279px;
@@ -148,16 +154,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 50px;
 
   @media screen and (min-width: $tablet) {
     align-items: center;
-    padding-bottom: 90px;
-    margin-top: 100px;
     flex-direction: row;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 147px;
   }
 }
 
