@@ -1,11 +1,14 @@
 <footer class="footer" id="contacts">
   <div class="container">
-    <div class="footer-nav__wrap">
-      <a class="footer__logo" href="./index.html"
-        ><svg class="logo__svg" width="65" height="51">
-          <use href="./images/sprite.svg#logo"></use></svg
-      ></a>
-      <nav class="footer__nav">
+    <div class="footer__wrap">
+      <div class="nav__wrap nav__wrap--footer">
+        <img
+          class="logo logo--footer logo__svg"
+          src="./images/svg/logo.svg"
+          alt="logo"
+          width="65"
+          height="51"
+        />
         <ul class="nav__list nav__list--footer">
           <li class="nav__item">
             <a class="nav__link nav__link--footer" href="#home">Home</a>
@@ -23,40 +26,40 @@
             <a class="nav__link nav__link--footer" href="#contacts">Contact</a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="footer__subscribe">
-      <p class="subscribe__title subscribe__title--footer">Subscribe</p>
-      <form class="footer-subscribe__form">
-        <label class="subscribe__label">
-          <input
-            class="subscribe__input subscribe__input--footer"
-            name="email"
-            required
-            type="email"
-            required
-            placeholder="Enter your email"
-            required
-          />
-          <div class="error__wrap">
-            <svg class="error__icon" width="12" height="12">
-              <use href="./images/sprite.svg#error_sign"></use>
-            </svg>
-            <span class="error__text"
-              >Not a valid email address (example@email.com)</span
-            >
+      </div>
+      <div class="footer__subscribe">
+        <p class="subscribe__title subscribe__title--footer">Subscribe</p>
+        <form class="footer-subscribe__form">
+          <div class="subscribe__label">
+            <input
+              class="subscribe__input subscribe__input--footer"
+              name="email"
+              required
+              type="email"
+              required
+              placeholder="Enter your email"
+              required
+            />
+            <div class="error__wrap">
+              <svg class="error__icon" width="12" height="12">
+                <use href="./images/sprite.svg#error_sign"></use>
+              </svg>
+              <span class="error__text"
+                >Not a valid email address (example@email.com)</span
+              >
+            </div>
           </div>
-        </label>
-        <button class="subscribe__btn subscribe__btn--footer" type="submit">
-          Subscribe
-        </button>
-      </form>
-      <p class="footer-subscribe__text">
-        By subscribing you agree to with our &nbsp;
-        <a class="footer-subscribe__link" href="" rel="noopener norefferer"
-          >Privacy Policy</a
-        >
-      </p>
+          <button class="subscribe__btn subscribe__btn--footer" type="submit">
+            Subscribe
+          </button>
+        </form>
+        <p class="footer-subscribe__text">
+          By subscribing you agree to with our &nbsp;
+          <a class="footer-subscribe__link" href="" rel="noopener norefferer"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
     </div>
     <div class="footer-terms__wrap">
       <div class="footer__terms">
