@@ -121,31 +121,31 @@
   }
 }
 
-.subscribe__btn {
-  @extend %btn;
-  display: flex;
-  margin-left: auto;
-  width: 106px;
-  height: 42px;
-  padding: 11px 22px;
-  border: none;
-  background-color: var(--btn-default);
-  align-items: center;
-
-  font-weight: 500;
-  color: var(--main-text-color);
-  outline: none;
-  transition: var(--animation);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-onhover);
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-left: 0;
-  }
-}
+// .subscribe__btn {
+//   @extend %btn;
+//   display: flex;
+//   margin-left: auto;
+//   width: 106px;
+//   height: 42px;
+//   padding: 11px 22px;
+//   border: none;
+//   background-color: var(--btn-default);
+//   align-items: center;
+//
+//   font-weight: 500;
+//   color: var(--main-text-color);
+//   outline: none;
+//   transition: var(--animation);
+//
+//   &:hover,
+//   &:focus {
+//     background-color: var(--btn-onhover);
+//   }
+//
+//   @media screen and (min-width: $tablet) {
+//     margin-left: 0;
+//   }
+// }
 
 .error__wrap--subscribe {
   display: flex;
