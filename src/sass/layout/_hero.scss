@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 50px;
   @media screen and (min-width: 768px) {
-    // padding-bottom: 0px;
+    
     padding-bottom: 73px;
   }
   @media screen and (min-width: 1280px) {
@@ -27,12 +27,15 @@
     min-width: 280px;
   }
   @media screen and (min-width: 768px) {
-    width: 100%;
-    // height: 409px;
+    width: 768px; 
+    
   }
   @media screen and (min-width: 1280px) {
     flex-direction: row;
-    // height: 460px;
+    margin-left: 0px;
+    width: 1280px;
+    margin: 0 auto;
+   
   }
 }
 .hero__info {
@@ -104,12 +107,7 @@
   @extend %btn;
   transition: background 250ms var(--animation);
 
-  //   @media screen and (min-width: $tablet) {
-  //     margin-bottom: 73px;
-  //   }
-  //   @media screen and (min-width: 1280px) {
-  //     margin-bottom: 163px;
-  //   }
+ 
 
   &:hover {
     background-color: var(--btn-onhover);
@@ -130,20 +128,19 @@
     height: 320px;
     border: 14px solid var(--yellow-main);
 
-    // position: absolute;
+   
     top: 90px;
     left: 405px;
   }
   @media screen and (min-width: 1280px) {
     display: block;
 
-    // position: relative;
+   
     border: 26px solid var(--yellow-main);
     margin-right: 14px;
     width: 580px;
     height: 580px;
-    // top: -142px;
-    // left: -13px;
+ 
     top: -143px;
     left: 670px;
   }
@@ -153,7 +150,7 @@
   width: 292px;
   height: 292px;
   margin: auto;
-  // border: 5px solid rgb(48, 48, 176);
+ 
   border-radius: 50%;
   overflow: hidden;
   @media screen and (min-width: 1280px) {
